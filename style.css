@@ -1,0 +1,481 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    overflow:hidden;
+    background:#07111f;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ================================= */
+/* LEFT PANEL */
+/* ================================= */
+
+.left-panel{
+
+    width:58%;
+
+    background:url("ChatGPT\ Image\ Jun\ 5\,\ 2026\,\ 08_24_53\ PM.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+
+    padding:60px;
+
+    position:relative;
+}
+
+/* Light Overlay Only */
+
+.left-panel::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.05)
+    );
+
+    z-index:1;
+}
+
+/* Hero Content */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:520px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:
+    rgba(0,0,0,.08);
+
+    backdrop-filter:
+    blur(6px);
+
+    border:
+    1px solid rgba(255,255,255,.04);
+}
+/* Badge */
+
+.badge{
+
+    display:inline-block;
+
+    background:
+    rgba(59,130,246,.15);
+
+    border:
+    1px solid rgba(59,130,246,.35);
+
+    color:#60a5fa;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    font-size:12px;
+
+    margin-bottom:25px;
+}
+
+/* Heading */
+
+.hero-content h1{
+
+    font-size:48px;
+
+    line-height:1.05;
+
+    color:white;
+
+    margin-bottom:15px;
+
+    text-shadow:
+    0 0 25px rgba(96,165,250,.3);
+}
+
+/* Paragraph */
+
+.hero-content p{
+
+    color:#dbeafe;
+
+    line-height:1.5;
+
+    font-size:15px;
+
+    margin-bottom:18px;
+}
+/* Feature Card */
+
+.feature-card{
+
+    width:320px;
+
+    padding:16px;
+
+    border-radius:18px;
+
+    background:
+    rgba(134,116,116,.08);
+
+    backdrop-filter:
+    blur(10px);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+    0 8px 20px rgba(0,0,0,.2);
+}
+
+.feature-card h3{
+
+    color:#60a5fa;
+
+    margin-bottom:8px;
+
+    font-size:20px;
+}
+
+.feature-card p{
+
+    color:#cbd5e1;
+
+    margin:0;
+
+    font-size:14px;
+
+    line-height:1.5;
+}
+.second-card{
+    margin-top:12px;
+}
+
+/* ================================= */
+/* RIGHT PANEL */
+/* ================================= */
+
+.right-panel{
+
+    width:42%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(
+        180deg,
+        #ffffff,
+        #f8fafc,
+        #eef2ff
+    );
+}
+
+/* ================================= */
+/* LOGIN CARD */
+/* ================================= */
+
+.login-card{
+
+    width:420px;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    background:
+    rgba(255,255,255,.85);
+
+    backdrop-filter:
+    blur(25px);
+
+    border:
+    1px solid rgba(0,0,0,.08);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+    color:#1e293b;
+}
+
+.login-card h2{
+
+    font-size:42px;
+
+    color:#0f172a;
+
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    color:#64748b;
+
+    margin-bottom:30px;
+}
+
+/* Tabs */
+
+.tabs{
+
+    display:flex;
+
+    margin-bottom:25px;
+}
+
+.tabs button{
+
+    flex:1;
+
+    background:none;
+
+    border:none;
+
+    padding:12px;
+
+    cursor:pointer;
+
+    color:#64748b;
+
+    font-weight:500;
+}
+
+.tabs .active{
+
+    color:#2563eb;
+
+    border-bottom:
+    2px solid #2563eb;
+}
+
+/* Labels */
+
+label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#334155;
+
+    font-weight:500;
+}
+
+/* Inputs */
+
+input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:20px;
+
+    border-radius:12px;
+
+    border:
+    1px solid #cbd5e1;
+
+    background:#f8fafc;
+
+    color:#0f172a;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+input::placeholder{
+
+    color:#94a3b8;
+}
+
+input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:
+    0 0 0 4px rgba(37,99,235,.15);
+}
+
+/* Options */
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+    font-size:13px;
+}
+
+.remember{
+
+    color:#475569;
+}
+
+.options a{
+
+    color:#2563eb;
+
+    text-decoration:none;
+}
+
+/* Login Button */
+
+.login-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #2563eb,
+        #60a5fa
+    );
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.login-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+    0 10px 25px rgba(37,99,235,.35);
+}
+
+/* Divider */
+
+.divider{
+
+    text-align:center;
+
+    margin:30px 0;
+
+    color:#64748b;
+
+    font-size:12px;
+}
+
+/* Social Buttons */
+
+.social-buttons{
+
+    display:flex;
+
+    gap:10px;
+}
+
+.social-btn{
+
+    flex:1;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    border:
+    1px solid #cbd5e1;
+
+    background:white;
+
+    color:#0f172a;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.social-btn:hover{
+
+    border-color:#2563eb;
+
+    color:#2563eb;
+}
+
+/* Signup */
+
+.signup-text{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#64748b;
+}
+
+.signup-text a{
+
+    color:#2563eb;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media(max-width:900px){
+
+    .left-panel{
+        display:none;
+    }
+
+    .right-panel{
+        width:100%;
+    }
+
+    .login-card{
+        width:90%;
+    }
+}
+
