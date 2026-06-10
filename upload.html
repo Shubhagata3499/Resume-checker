@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Resume</title>
+
+    <link rel="stylesheet" href="upload.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT PANEL -->
+
+        <div class="left-panel">
+
+            <div class="hero-content">
+
+                <span class="badge">
+                    AI POWERED RECRUITMENT
+                </span>
+
+                <h1>
+                    Upload Resume,<br>
+                    Let AI Do The Rest
+                </h1>
+
+                <p>
+                    Our AI analyzes resumes, matches skills,
+                    ranks candidates and helps recruiters
+                    hire smarter and faster.
+                </p>
+
+                <div class="feature-card">
+
+                    <div class="icon">📄</div>
+
+                    <div>
+                        <h3>Smart Analysis</h3>
+                        <p>
+                            AI scans and extracts key information,
+                            skills and experience.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="feature-card second-card">
+
+                    <div class="icon">📈</div>
+
+                    <div>
+                        <h3>Accurate Matching</h3>
+                        <p>
+                            Match candidates based on skills,
+                            experience and job requirements.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+
+        <div class="right-panel">
+
+            <div class="upload-card">
+
+                <h2>Upload Resume</h2>
+
+                <p class="subtitle">
+                    Upload candidate resume to get AI-powered insights and analysis.
+                </p>
+
+                <div class="drop-zone">
+
+                    <div class="upload-icon">
+                        ⬆
+                    </div>
+
+                    <h3>Drag & Drop your file here</h3>
+
+                    <span>or</span>
+
+                    <input type="file"
+                        id="resume"
+                        hidden>
+
+                    <button class="browse-btn"
+                        onclick="document.getElementById('resume').click()">
+                        Browse File
+                    </button>
+
+                    <p class="file-info">
+                        Supported formats: PDF, DOCX (Max 10MB)
+                    </p>
+
+                </div>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label>Full Name</label>
+                        <input type="text"
+                            placeholder="Candidate Full Name">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Total Experience</label>
+                        <input type="text"
+                            placeholder="e.g. 3+ Years">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email Address</label>
+                        <input type="email"
+                            placeholder="candidate@email.com">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Skills</label>
+                        <input type="text"
+                            placeholder="React, Java, SQL">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input type="text"
+                            placeholder="+91 9876543210">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Current Role</label>
+                        <input type="text"
+                            placeholder="Frontend Developer">
+                    </div>
+
+                </div>
+
+                <button class="analyze-btn">
+                    ✨ Analyze Resume
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
